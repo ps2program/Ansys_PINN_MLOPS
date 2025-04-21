@@ -1,0 +1,68 @@
+digraph {
+	graph [size="12,12"]
+	node [align=left fontname=monospace fontsize=10 height=0.2 ranksep=0.1 shape=box style=filled]
+	13002864704 [label="
+ (1, 3)" fillcolor=darkolivegreen1]
+	13002707712 [label=AddmmBackward0]
+	6201239600 -> 13002707712
+	12978840240 [label="net.6.bias
+ (3)" fillcolor=lightblue]
+	12978840240 -> 6201239600
+	6201239600 [label=AccumulateGrad]
+	6201245648 -> 13002707712
+	6201245648 [label=TanhBackward0]
+	6201179248 -> 6201245648
+	6201179248 [label=AddmmBackward0]
+	13002427936 -> 6201179248
+	12978840320 [label="net.4.bias
+ (64)" fillcolor=lightblue]
+	12978840320 -> 13002427936
+	13002427936 [label=AccumulateGrad]
+	6201360592 -> 6201179248
+	6201360592 [label=TanhBackward0]
+	6201360688 -> 6201360592
+	6201360688 [label=AddmmBackward0]
+	6201360832 -> 6201360688
+	12978839440 [label="net.2.bias
+ (64)" fillcolor=lightblue]
+	12978839440 -> 6201360832
+	6201360832 [label=AccumulateGrad]
+	6201360640 -> 6201360688
+	6201360640 [label=TanhBackward0]
+	6201360976 -> 6201360640
+	6201360976 [label=AddmmBackward0]
+	6201361120 -> 6201360976
+	12978838240 [label="net.0.bias
+ (64)" fillcolor=lightblue]
+	12978838240 -> 6201361120
+	6201361120 [label=AccumulateGrad]
+	6201361072 -> 6201360976
+	6201361072 [label=TBackward0]
+	6201361216 -> 6201361072
+	12978838320 [label="net.0.weight
+ (64, 3)" fillcolor=lightblue]
+	12978838320 -> 6201361216
+	6201361216 [label=AccumulateGrad]
+	6201360784 -> 6201360688
+	6201360784 [label=TBackward0]
+	13007858480 -> 6201360784
+	12906947728 [label="net.2.weight
+ (64, 64)" fillcolor=lightblue]
+	12906947728 -> 13007858480
+	13007858480 [label=AccumulateGrad]
+	6201360496 -> 6201179248
+	6201360496 [label=TBackward0]
+	6201361024 -> 6201360496
+	12978753520 [label="net.4.weight
+ (64, 64)" fillcolor=lightblue]
+	12978753520 -> 6201361024
+	6201361024 [label=AccumulateGrad]
+	6201245600 -> 13002707712
+	6201245600 [label=TBackward0]
+	13002431536 -> 6201245600
+	12978837920 [label="net.6.weight
+ (3, 64)" fillcolor=lightblue]
+	12978837920 -> 13002431536
+	13002431536 [label=AccumulateGrad]
+	13002707712 -> 13002864704
+}
